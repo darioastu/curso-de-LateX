@@ -1,0 +1,104 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%       Clase, paquetes y configuraciones
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{article} % Font size
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nolayout,es-nodecimaldot,es-tabla]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb,amsthm}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{nicefrac}
+\usepackage[left=2cm,right=2cm,top=2.5cm,bottom=2cm]{geometry}
+\usepackage[colorlinks = true]{hyperref}
+\usepackage{listings}
+
+%
+\newtheorem{teo}{Teorema}
+
+% Comandos
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\yds}{\qquad\text{y}\qquad}
+\DeclareMathOperator{\proy}{proy}
+\DeclareMathOperator{\dd}{d}
+
+\linespread{1.25}
+
+%----------------------------------------------------------------------------------------
+%       Datos informativos
+%----------------------------------------------------------------------------------------
+\title{\begin{large}CURSO DE LATEX\end{large}\\ Tarea 4}
+\author{Dario Astudillo}
+\date{\today}   
+
+% Contenido
+\begin{document}
+	\maketitle
+\begin{itemize}
+\item\bf{Programa dia de la semana:}
+\\
+Generar un programa que al ingresas un numero de 1 al 7 indique el dia de la semana correspondiente.
+\end{itemize}
+
+ 
+\begin{lstlisting}[frame=single]
+
+//PROGRAMA//ELECTRONICA  Y TELECOMUNICACIONES//DARIO ASTUDILLO
+
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+
+int main()
+
+{
+
+    int dia ;
+
+
+    printf(" \n\            PROGRAMA DIA DE LA SEMANA\n\n ");
+
+    printf(" \n\ingrese un numero de 1 al 7 \n\n ");
+    scanf("%d",&dia);
+    switch(dia)
+    {
+		case 1:
+	 printf(" \n\el dia es lunes\n\n ");
+		break;
+      case 2:
+	 printf(" \n\el dia es martes \n\n ");
+		break;
+      case 3:
+	 printf(" \n\el dia es miercoles \n\n ");
+		break;
+      case 4:
+	 printf(" \n\el dia es jueves \n\n ");
+		break;
+      case 5:
+	 printf(" \n\el dia es viernes\n\n ");
+		break;
+      case 6:
+	 printf(" \n\el dia es sabado \n\n ");
+		break;
+      case 7:
+     printf(" \n\el dia es domingo \n\n ");
+		break;
+       default:
+             printf("no existe ese dia \n");
+             break;
+
+          }
+
+    getch();
+
+}
+\end{lstlisting}
+
+\end{document}
