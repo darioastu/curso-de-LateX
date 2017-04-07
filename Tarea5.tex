@@ -1,0 +1,79 @@
+\documentclass[a4paper, 11pt]{article}
+
+% Paquetes
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[top=1cm, left=2cm]{geometry}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{multirow}
+
+% Comandos
+\parindent = 0.1mm
+\author{Dario Astudillo }
+\title{Tarea 5 Capitulo 5}
+\date{\today}
+
+% Contenido
+\begin{document}
+\maketitle
+\begin{table}[h]
+\label{my-label}
+\begin{tabular}{lllll}
+\multicolumn{1}{c|}{\multirow{2}{*}{1256}} & Moral,Valle \& Garcia :modelos predictivos de homonegatividad &  &  &  \\
+\multicolumn{1}{c|}{}                      &                                                               &  &  &  \\
+                                           &                                                               &  &  &  \\
+                                           &                                                               &  &  & 
+\end{tabular}
+\begin{tabular}{c p{1,6cm} lcccccc} \hline
+Modelos & & & B & EE & Wald & p & LI & LS\\ \hline
+\multirow{8}{*}{HNI-16} & \multirow{4}{2cm}{Variable predicha}& 1 & 1.34 & 0.54 & 6.24 & .013 & 0.29 \\
+& & 3 & 2.61 & 0.56 & 21.80 & \(<\).001 & 1.51 & 3.70 \\
+&& 5 & 4.36 & 0.58 & 56.33 & \(<\).001 & 3.22 & 5.50 \\
+&& 7 & 7.08 & 0.81 & 77.17 & \(<\).001 & 5.50 & 8.66 \\
+& \multirow{4}{2cm}{Variables predictoras} & [Rlg = Católica] & 0.64 & 0.21 & 8.96 & .003 & 0.22 & 1.05 \\
+&& [Rlg = Cristiana] & 1.99 & 0.44 & 20.19 & < .001 & 1.12 & 2.86 \\
+&& [AmHo = No] & 0.58 & 0.18 & 10.45 & .001 & 0.23 & 0.94 \\
+&& [OS = Hetero.] & 1.91 & 0.53 & 13.22 & < .001 & 0.88 & 2.95 \\
+
+
+\multirow{8}{*}{EXT} & \multirow{4}{2cm}{Variable predicha}& 1 & -0.31 & 0.22 & 1.98 & .159 & -0.75 &0.12 \\
+& & 3 & 2.61 & 0.56 & 21.80 & \(<\).001 & 1.51 & 3.70 \\
+&& 5 & 4.36 & 0.58 & 56.33 & \(<\) .001 & 3.22 & 5.50 \\
+&& 7 & 7.08 & 0.81 & 77.17 & \(<\) .001 & 5.50 & 8.66 \\
+& \multirow{4}{2cm}{Variables predictoras} & [Rlg = Católica] & 0.64 & 0.21 & 8.96 & .003 & 0.22 & 1.05 \\
+&& [Rlg = Cristiana] & 1.99 & 0.44 & 20.19 & < .001 & 1.12 & 2.86 \\
+&& [AmHo = No] & 0.58 & 0.18 & 10.45 & .001 & 0.23 & 0.94 \\
+&& [Sexo = Mujer] & 1.91 & 0.53 & 13.22 & < .001 & 0.88 & 2.95 \\
+
+
+\multirow{8}{*}{INT} & \multirow{4}{2cm}{Variable predicha}& 1 & -0.31 & 0.22 & 1.98 & .159 & -0.75 &0.12 \\
+& & 3 & 2.61 & 0.56 & 21.80 & \(<\) .001 & 1.51 & 3.70 \\
+&& 5 & 4.36 & 0.58 & 56.33 & \(<\) .001 & 3.22 & 5.50 \\
+&& 7 & 7.08 & 0.81 & 77.17 & \(<\) .001 & 5.50 & 8.66 \\
+
+& \multirow{3}{2cm}{Variables predictoras} & [Rlg = Católica] & 0.64 & 0.21 & 8.96 & .003 & 0.22 & 1.05 \\
+&& [Rlg = Cristiana] & 1.99 & 0.44 & 20.19 & \(<\) .001 & 1.12 & 2.86 \\
+&& [OS = Hetero.] & 1.91 & 0.53 & 13.22 & \(<\) .001 & 0.88 & 2.95 \\
+
+\multirow{8}{*}{PROMI} & \multirow{4}{2cm}{Variable predicha}& 1 & -0.31 & 0.22 & 1.98 & .159 & -0.75 &0.12 \\
+& & 3 & 2.61 & 0.56 & 21.80 & \(<\) .001 & 1.51 & 3.70 \\
+&& 5 & 4.36 & 0.58 & 56.33 & \(<\) .001 & 3.22 & 5.50 \\
+&& 7 & 7.08 & 0.81 & 77.17 & \(<\) .001 & 5.50 & 8.66 \\
+
+& \multirow{4}{2cm}{Variables predictoras} & [Rlg = Católica] & 0.64 & 0.21 & 8.96 & .003 & 0.22 & 1.05 \\
+&& [Rlg = Cristiana] & 1.99 & 0.44 & 20.19 & \(<\) .001 & 1.12 & 2.86 \\
+&& [OS = Hetero] & 0.58 & 0.18 & 10.45 & .001 & 0.23 & 0.94 \\
+&& [VISA = No] & 1.91 & 0.53 & 13.22 & \(<\) .001 & 0.88 & 2.95 \\
+\hline
+\end{tabular}
+\label{tabla:03}
+\end{table}
+Parámetros fijados a 0: [Religión (Rlg) = Otra], [Amigos homosexuales (AmHo) = Sí], [Orientación
+sexual (OS) = No heterosexual], [Sexo = Hombre] e [Inicio de la vida sexual activa de pareja (IVSA)
+= Sí]. HNI-16: puntuación total de la escala HNI-16, EXT: rechazo de la manifestación pública de la
+homosexualidad, INT: rechazo de los deseos, pensamientos e identidad homosexuales propios,
+PROMI: calificación de las personas homosexuales como promiscuas. Valores de las variables
+predichas: 1 “completamente en desacuerdo”, 3 “en desacuerdo”, 5 “indiferente”, 7 “de acuerdo” y
+9 “definitivamente de acuerdo” (categoría de referencia).
+\end{document}
